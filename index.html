@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protected Page</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 100px; }
+  </style>
+</head>
+<body>
+  <script>
+    const password = prompt("Enter the password:");
+    const correct = "letmein"; // ← Change this!
+
+    if (password !== correct) {
+      document.write("<h1>Access Denied</h1>");
+    } else {
+      window.location.href = "main.html";
+    }
+  </script>
+</body>
+</html>
